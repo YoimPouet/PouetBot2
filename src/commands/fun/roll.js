@@ -1,9 +1,9 @@
-const rollDice = () => Math.floor(Math.random() * 6) + 1;
+const { rollDice } = require('../../utils/dicefn');
 
 module.exports = {
-    run: async(client, message) => {
+    run: async(client, message, args) => {
         message.reply("rolled a " + rollDice());
     },
-    aliases: ['dice', 'rolldice', 'r'],
+    aliases: ['dice', 'rolldice'],
     description: 'Rolls the dice'
 }
