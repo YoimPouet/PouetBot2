@@ -4,6 +4,6 @@ module.exports = {
     run: async(client, message) => {
         message.reply("rolled a " + rollDice());
     },
-    aliases: ['dice', 'rolldice'],
+    aliases: ['dice', 'rolldice', 'r'],
     description: 'Rolls the dice'
 }
